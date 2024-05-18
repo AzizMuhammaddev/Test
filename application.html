@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job application<</title>
+        <style>
+        .ikki{
+            float: left;
+            width: 50%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .uch{
+            float: left;
+            width: 50%;
+            height: 100px;
+            line-height: 100px;
+        }
+        .box{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .yon{
+            border: 1px solid black;
+                padding: 5px ;
+                text-align: left;
+        }
+        .dum{
+            width: 50%;
+
+        }
+        </style>
+    <head>
+        <body>
+            <div>
+            <h1>Job application</h1>
+            <p><b>Please complete the form below to apply for a position with us.</b></p>
+            </div>
+            <hr>
+            <div>
+                <p>Full Name *</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="text" name="First_name" id="name" required placeholder="First name"> <br>
+                            <label for="name"><sub>First name</sub></label>
+                        </th>
+                        <th> 
+                            <input type="text" name="Middle_name" id="name" required placeholder="Middle name"> <br>
+                            <label for="name"><sub>Middle name</sub></label>
+                        </th>
+                        <th> 
+                            <input type="text" name="Last_name" id="name" required placeholder="Last name"> <br>
+                            <label for="name"><sub>Last name</sub></label>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            </div>
+            <div>
+                <p>Body size *</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="number" name="height" id="number" required placeholder="sm"><br>
+                            <label for="number"><sub>Height</sub></label>
+                        </th>
+                        <th>
+                            <input type="number" name="weight" id="number" required placeholder="kg"><br>
+                            <label for="number"><sub>Weight</sub></label>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            </div>
+            <div>
+                <p>Birth date *</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="date" name="birth_date" id="month"><br>
+                                <label for="month"><sub>Month</sub></label>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div>
+                <p>Family Status</p>
+            <input type="radio" name="status" id="divorced">
+            <label for="status">Divorced</label><br>
+            <input type="radio" name="status" id="married">
+            <label for="status">Married</label><br>
+            <input type="radio" name="status" id="single">
+            <label for="status">Single</label><br>
+            <input type="radio" name="status" id="other">
+            <label for="status">Other</label>
+            <textarea name="status" id="status" rows="2" cols="15"></textarea>
+            </div>
+            <div>
+              <p>Current Address</p>
+                <textarea name="address" id="address" rows="2" cols="100"></textarea><br>
+                <label for="address"><sub>Street Address</sub></label><br><br>
+                <textarea name="address2" id="address" rows="2" cols="100"></textarea><br>
+                <label for="address2"><sub>Street Address Line2</sub></label><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <textarea name="city" id="city" rows="2" cols="48"></textarea><br>
+                                <label for="city"><sub>City</sub></label> 
+                            </th>
+                            <th>
+                                <textarea name="province" id="province" rows="2" cols="48"></textarea><br>
+                                <label for="province"><sub>Province / State</sub></label> <br><br>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <textarea name="code" id="code" rows="2" cols="100"></textarea><br>
+                <label for="code"><sub>Postal / Zip Code</sub></label><br><br>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <p>Email address</p>
+                        </th>
+                        <th>
+                            <p>Phone</p>
+                        </th>
+                        <th>
+                            <p>number</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="example@example.com"><br>
+                            <label for="email"><sub>example@email.com</sub></label>
+                        </td>
+                        <td>
+                            <textarea name="pcode" id="pcode" rows="1" cols="4" placeholder="90"></textarea><br>
+                            <label for="pcode"><sub>Code</sub></label>
+                        </td>
+                        <td>
+                            <textarea name="pnumber" id="pnumber" rows="1" cols="10" placeholder="1234567"></textarea><br>
+                            <label for="pnumber"><sub>Number</sub></label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <p>
+                                LinkedIn
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                Experience
+                            </p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <textarea name="linkedin" id="linkedin" rows="1" cols="20"></textarea>
+                            <label for="linkedin"></label>
+                        </td>
+                        <td>
+                            <input type="number" name="experience" id="experience">
+                            <label for="experience"></label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <p>
+                                Position Applied
+                            </p>
+                        </th>
+                        <th>
+                            <p>
+                                How did you hear about us
+                            </p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="position" id="job">
+                                <option value="0">Please select</option>
+                                <option value="1">Marketing specialist</option>
+                                <option value="2">Sales manager</option>
+                                <option value="3">Product lead</option>
+                                <option value="4">Developer</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="hearing" id="about_us">
+                                <option value="o">Please select</option>
+                                <option value="1">LinkedIn</option>
+                                <option value="2">Event</option>
+                                <option value="3">Social media</option>
+                                <option value="4">Company website</option>
+                                <option value="5">Family/friends</option>
+                                <option value="">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            <p>Available Start Date</p>
+            <input type="date" name="starting" id="starting">
+            <label for="starting"></label><br><br>
+        <p>Computer skills</p>
+        <table class="box">
+            <thead>
+                <tr>
+                    <th class="yon">
+
+                    </th>
+                    <th class="yon">
+                        Beginner
+                    </th>
+                    <th class="yon">
+                        Elementary
+                    </th>
+                    <th class="yon">
+                        Advanced
+                    </th>
+                    <th class="yon">
+                        Expert
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="yon">
+                      excel  
+                    </td>
+                    <td class="yon">
+                        <label for="excel"></label>
+                        <input type="radio" name="excel" value="beginner">
+                    </td>
+                    <td class="yon">
+                        <label for="excel"></label>
+                        <input type="radio" name="excel" value="elementary">
+                    </td>
+                    <td class="yon">
+                        <label for="excel"></label>
+                        <input type="radio" name="excel" value="advanced">
+                    </td>
+                    <td class="yon">
+                        <label for="excel"></label>
+                        <input type="radio" name="excel" value="expert">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yon">
+                        word
+                    </td>
+                    <td class="yon">
+                        <label for="word"></label>
+                        <input type="radio" name="word" value="beginner">
+                    </td>
+                    <td class="yon">
+                        <label for="word"></label>
+                        <input type="radio" name="word" value="elementary">
+                    </td>
+                    <td class="yon">
+                        <label for="word"></label>
+                        <input type="radio" name="word" value="advanced">
+                    </td>
+                    <td class="yon">
+                        <label for="word"></label>
+                        <input type="radio" name="word" value="expert">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yon">
+                        1C
+                    </td>
+                    <td class="yon">
+                        <label for="1C"></label>
+                        <input type="radio" name="1C" value="beginner">  
+                    </td>
+                    <td class="yon">
+                            <label for="1C"></label>
+                            <input type="radio" name="1C" value="elementary">
+                    </td>
+                    <td class="yon">
+                        <label for="1C"></label>
+                        <input type="radio" name="1C" value="advanced">  
+                    </td>
+                    <td class="yon">
+                        <label for="1C"></label>
+                        <input type="radio" name="1C" value="expert">  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yon">
+                        Programming language
+                    </td>
+                    <td class="yon">
+                        <label for="programming language"></label>
+                        <input type="radio" name="programming language" value="beginner">  
+                    </td>
+                    <td class="yon">
+                            <label for="programming language"></label>
+                            <input type="radio" name="programming language" value="elementary">
+                    </td>
+                    <td class="yon">
+                        <label for="programming language"></label>
+                        <input type="radio" name="programming language" value="advanced">  
+                    </td>
+                    <td class="yon">
+                        <label for="programming language"></label>
+                        <input type="radio" name="programming language" value="expert">  
+                    </td>
+                </tr>
+            </div>
+            </tbody>
+        </table><br><br>
+        <p>Ability knowing English Language</p><br>
+        <table class="dum">
+            <thead>
+                <tr>
+                    <th>
+                        <label for="english">Worst</label>
+                        <input type="radio" name="english" value="worst">
+                    </th>
+                    <th>
+                        <label for="english">2</label>
+                        <input type="radio" name="english" value="better">
+                    </th>
+                    <th>
+                        <label for="english">3</label>
+                        <input type="radio" name="english" value="good">
+                    </th>
+                    <th>
+                        <label for="english">4</label>
+                        <input type="radio" name="english" value="normal">
+                    </th>
+                    <th>
+                        <label for="english">Best</label>
+                        <input type="radio" name="english" value="best">
+                    </th>
+                </tr>
+            </thead>
+        </table><br><br>
+          <label for="file"> Applicant Document(Diploma, Certificate)</label><br><br>
+          <input type="file" name="file" id="file"><br><br>
+        <label for="rezume">Upload Your Resume</label><br><br>
+        <input type="file" name="rezume" id="rezume"><br><br>
+        <label for="letter">Cover letter</label><br><br>
+        <textarea name="letter" id="letter" rows="15" cols="45"></textarea><br><br>
+
+            <button type="submit">Apply</button>
+        </body>
+</html>
